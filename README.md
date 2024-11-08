@@ -41,3 +41,9 @@ Run the unemployment report:
 ```sh
 python app/unemployment.py
 ```
+
+Run the stock report:
+
+```sh
+python app/stock_report.py
+```
