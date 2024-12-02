@@ -5,3 +5,7 @@ plotly
 pandas
 
 python-dotenv
+
+pytest
+
+flask
