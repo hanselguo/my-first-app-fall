@@ -1,6 +1,7 @@
+
 from pandas import DataFrame
 
-from app.stock_report import fetch_stocks_csv
+from app.stocks import fetch_stocks_csv
 
 def test_stock_data_fetching():
 
