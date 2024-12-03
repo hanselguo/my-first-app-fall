@@ -7,8 +7,6 @@ from plotly.express import line
 
 
 from app.alpha_service import API_KEY
-from app.email_service import send_email_with_sendgrid
-
 
 def format_usd(my_price):
     return f"${float(my_price):,.2f}"
@@ -76,12 +74,3 @@ if __name__ == "__main__":
                 title=f"Stock Prices ({symbol})",
             labels= {"x": "Date", "y": "Stock Price ($)"})
     fig.show()
-
-
-    # SEND EMAIL
-
-    latest_price = first_row['adjusted_close']
-
-    send_email_with_sendgrid(subject="Stocks Report",
-        html_content=f"Latest price for {symbol} is {latest_price}"
-    )
